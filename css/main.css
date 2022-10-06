@@ -351,10 +351,10 @@ body {
   left: 532px;
   overflow: hidden;
 }
-.facebook-icon {
+.youtube-icon {
   width: 52px;
   height: 52px;
-  background: url("../images/facebook-icon.png");
+  background: url("../images/youtube-icon.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -401,14 +401,18 @@ body {
   overflow: hidden;
 }
 .copyright {
-  width: 403px;
+  width: 440px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 47px;
-  left: 293px;
+  left: 265px;
   font-family: Helvetica Neue;
   font-weight: Regular;
   font-size: 14px;
   opacity: 1;
   text-align: center;
+}
+a[target="_blank"] {
+  padding-right: 22px;
+  background: url(../images/icon_blank.png) right center/22px auto no-repeat;
 }
