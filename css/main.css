@@ -285,20 +285,16 @@ body {
   left: 445px;
   overflow: hidden;
 }
-.rerated-item-section {
+.related-item-section {
   width: 954px;
   height: 426px;
-  background: url("../images/rerated-item-section.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   opacity: 1;
   position: absolute;
   top: 1940px;
   left: 141px;
   overflow: hidden;
 }
-.rerated-item-section-paragraph-1 {
+.related-item-section-paragraph-1 {
   width: 954px;
   color: rgba(0, 209, 255, 1);
   position: absolute;
@@ -310,7 +306,7 @@ body {
   opacity: 1;
   text-align: center;
 }
-.rerated-item-section-paragraph-2 {
+.related-item-section-paragraph-2 {
   width: 954px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
