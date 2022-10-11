@@ -2,101 +2,183 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link href="https://fonts.googleapis.com/css?family=Helvetica+Neue&display=swap" rel="stylesheet" />
-    <!-- reset.css destyle -->
-    <link href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Helvetica+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset.css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+      rel="stylesheet"
+    />
     <link href="./css/main.css" rel="stylesheet" />
-    <link href="./images/favicon.ico" rel="shortcut icon">
-    <link href="./images/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="./images/android-chrome-192x192.png" rel="icon" type="image/png">
+    <link href="./images/favicon.ico" rel="shortcut icon" />
+    <link href="./images/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      href="./images/android-chrome-192x192.png"
+      rel="icon"
+      type="image/png"
+    />
     <title>Covid19対策クイズ</title>
     <meta name="description" content="Covid19対策クイズ特設ページ" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
-    <div class="background">
-      <div class="header"></div>
+    <!-- ヘッダー/start -->
+    <header class="header"></header>
+    <!-- ヘッダー/end -->
 
-      <div class="title-section">
+    <!-- タイトル/start -->
+    <div class="title-section">
+      <div class="title-logos">
         <p class="title-section-paragraph-1">正しい感染対策できていますか？</p>
-        <div class="title-img"></div>
-        <div class="title-game-img"></div>
+        <img
+          src="./images/title-img.png"
+          class="title-img"
+          width="460"
+          height="290"
+        />
+      </div>
+      <img
+        src="./images/title-game-img.png"
+        class="title-game-img"
+        width="220"
+        height="433"
+      />
+    </div>
+    <!-- タイトル／end -->
+
+    <!-- ゲーム/start -->
+    <div class="game-section">
+      <p class="game-section-paragraph-1">COVID19対策クイズに挑戦する</p>
+
+      <!-- 後回し -->
+      <div class="game-qr-background">
+        <p class="game-section-paragraph-2">はじめる</p>
+        <img
+          src="./images/game-qr.png"
+          class="game-qr"
+          width="106"
+          height="106"
+        />
       </div>
 
-      <div class="game-section">
-        <div class="game-section-background"></div>
-        <p class="game-section-paragraph-1">COVID19対策クイズに挑戦する</p>
-        <div class="game-qr-background"></div>
-        <span class="game-section-paragraph-2">はじめる</span>
-        <div class="game-qr"></div>
-        <p class="game-section-paragraph-3">
-          ※COVID19対策クイズはスマートフォンから受験することができます。
-        </p>
-      </div>
+      <p class="game-section-paragraph-3">
+        ※COVID19対策クイズはスマートフォンから受験することができます。
+      </p>
+    </div>
+    <!-- ゲーム／end -->
 
-      <div class="game-comment-section">
-        <p class="game-comment-section-paragraph-1">COVID19対策クイズとは</p>
-        <p class="game-comment-section-paragraph-2">
-          「COVID19対策クイズ」は新型コロナウイルス感染症（COVID19）の特徴や基本的感染対策に関する知識を確認することを目的としています。
-        </p>
-        <p class="game-comment-section-paragraph-3">
-          クイズを通して基本的感染対策を再確認いただき、感染症から日常生活を守っていきましょう。
-        </p>
-        <div class="content-game-img"></div>
-        <div class="result-game-img"></div>
-      </div>
-
-      <div class="plan-section">
-        <p class="plan-section-paragraph-1">企画</p>
-        <p class="plan-section-paragraph-2">
-          本クイズは「若者による感染対策の広報ワークセッション」にて、公立千歳科学技術大学チームが制作しました。
-        </p>
-        <p class="plan-section-paragraph-3">
-          イベント概要　<a
-            href="https://corona.go.jp/together/event/"
-            target="_blank"
-            >https://corona.go.jp/together/event/</a
-          >
-        </p>
-        <div class="game-plan-img"></div>
-      </div>
-
-      <div class="related-item-section">
-        <p class="related-item-section-paragraph-1">関連</p>
-        <ul class="related-item-section-paragraph-2">
-          <li>
-            新型コロナウイルス感染症対策（内閣官房新型コロナウイルス等感染症対策推進室）<br /><a
-              href="https://corona.go.jp/"
-              target="_blank"
-              >https://corona.go.jp/</a
-            >
-          </li>
-          　
-          <li>
-            若者による感染対策の広報ワークセッションの開催結果<br /><a
-              href="https://corona.go.jp/together/event/report/"
-              target="_blank"
-              >https://corona.go.jp/together/event/report/</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="sns-section">
-        <a href="https://www.youtube.com/channel/UCSbfb0q4ax5bAC-sXiPNR5A"
-          ><div class="youtube-icon"></div
-        ></a>
-        <a href="https://twitter.com/kanboukansen"
-          ><div class="twitter-icon"></div
-        ></a>
-      </div>
-
-      <div class="footer">
-        <div class="footer-line"></div>
-        <p class="copyright">
-          Copyright © 2022 内閣官房新型コロナウイルス等感染症対策推進室
-        </p>
+    <!-- ゲーム解説／start -->
+    <div class="game-comment-section">
+      <p class="game-comment-section-paragraph-1">COVID19対策クイズとは</p>
+      <div class="game-comment-flex">
+        <div class="game-comments">
+          <p class="game-comment-section-paragraph-2">
+            「COVID19対策クイズ」は新型コロナウイルス感染症（COVID19）の特徴や基本的感染対策に関する知識を確認することを目的としています。
+          </p>
+          <br />
+          <p class="game-comment-section-paragraph-3">
+            クイズを通して基本的感染対策を再確認いただき、感染症から日常生活を守っていきましょう。
+          </p>
+        </div>
+        <div class="game-comment-images">
+          <img
+            src="./images/content-game-img.png"
+            class="content-game-img"
+            width="198"
+            height="352"
+          />
+          <img
+            src="./images/result-game-img.png"
+            class="result-game-img"
+            width="198"
+            height="352"
+          />
+        </div>
       </div>
     </div>
+    <!-- ゲーム解説／end -->
+
+    <!-- 企画説明/start -->
+    <div class="plan-section">
+      <p class="plan-section-paragraph-1">企画</p>
+      <div class="plan-section-flex">
+        <div class="plan-section-comments">
+          <p class="plan-section-paragraph-2">
+            本クイズは「若者による感染対策の広報ワークセッション」にて、公立千歳科学技術大学チームが制作しました。
+          </p>
+          <br />
+          <p class="plan-section-paragraph-3">
+            イベント概要　<a
+              href="https://corona.go.jp/together/event/"
+              target="_blank"
+              >https://corona.go.jp/together/event/</a
+            >
+          </p>
+        </div>
+        <img
+          src="./images/game-plan-img.png"
+          class="game-plan-img"
+          width="480"
+          height="270"
+        />
+      </div>
+    </div>
+    <!-- 企画説明/end -->
+
+    <!-- 関連項目/start -->
+    <div class="related-item-section">
+      <p class="related-item-section-paragraph-1">関連</p>
+      <ul class="related-item-section-paragraph-2">
+        <li>
+          新型コロナウイルス感染症対策<br />
+          （内閣官房新型コロナウイルス等感染症対策推進室）<br /><a
+            href="https://corona.go.jp/"
+            target="_blank"
+            >https://corona.go.jp/</a
+          >
+        </li>
+        <br />
+        <li>
+          若者による感染対策の広報ワークセッションの開催結果<br /><a
+            href="https://corona.go.jp/together/event/report/"
+            target="_blank"
+            >https://corona.go.jp/together/event/report/</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- 関連項目/end -->
+
+    <!-- SNS/start -->
+    <div class="sns-section">
+      <a href="https://www.youtube.com/channel/UCSbfb0q4ax5bAC-sXiPNR5A"
+        ><img
+          src="./images/youtube-icon.png"
+          class="youtube-icon"
+          width="52"
+          height="52"
+        />
+      </a>
+      <a href="https://twitter.com/kanboukansen"
+        ><img
+          src="./images/twitter-icon.png"
+          class="twitter-icon"
+          width="52"
+          height="52"
+        />
+      </a>
+    </div>
+    <!-- SNS/end -->
+
+    <!-- フッター/start -->
+    <footer class="footer">
+      <div class="footer-line"></div>
+      <p class="copyright">
+        Copyright © 2022 内閣官房新型コロナウイルス等感染症対策推進室
+      </p>
+    </footer>
+    <!-- フッター／end -->
   </body>
 </html>

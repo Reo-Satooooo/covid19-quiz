@@ -1,390 +1,349 @@
+@charset "utf-8";
+
 * {
   box-sizing: border-box;
 }
-body {
+
+/* 基本スタイル（PC向けスタイル） */
+html {
   font-size: 14px;
 }
-.background {
-  width: 100%;
-  height: 2600px;
-  background: rgba(255, 255, 255, 1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
+
+/* ヘッダーセクション */
 .header {
   width: 100%;
   height: 62px;
-  background: rgba(255, 255, 255, 1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+  background-color: rgba(255, 255, 255, 1);
 }
+
+/* タイトルセクション */
 .title-section {
-  width: 788px;
-  height: 433px;
-  opacity: 1;
-  position: absolute;
-  top: 72px;
-  left: 205px;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-logos {
+  width: 460px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .title-section-paragraph-1 {
-  width: 478px;
+  width: 100%;
   color: rgba(0, 209, 255, 1);
-  position: absolute;
-  top: 30px;
-  left: 0px;
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 26px;
-  opacity: 1;
-  text-align: left;
+  font-size: 28px;
+  text-align: center;
 }
 .title-img {
-  width: 460px;
-  height: 290px;
-  background: url("../images/title-img.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 99px;
-  left: 0px;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
 }
 .title-game-img {
-  width: 220px;
-  height: 433px;
-  background: url("../images/title-game-img.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 568px;
-  overflow: hidden;
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
+
+/* ゲームセクション */
 .game-section {
   width: 100%;
-  height: 289px;
-  opacity: 1;
-  position: absolute;
-  top: 535px;
-  left: 0px;
-  overflow: hidden;
-}
-.game-section-background {
-  width: 100%;
-  height: 289px;
-  background: url("../images/game-section-background.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+  height: auto;
+  background-color: rgba(0, 209, 255, 1);
+  margin-top: 80px;
 }
 .game-section-paragraph-1 {
-  width: 420px;
+  width: 100%;
   color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 29px;
-  left: 393px;
   font-family: Helvetica Neue;
   font-weight: Regular;
   font-size: 26px;
-  opacity: 1;
   text-align: center;
+  padding-top: 20px;
 }
 .game-qr-background {
   width: 253px;
   height: 148px;
-  background: rgba(255, 255, 255, 1);
-  opacity: 1;
-  position: absolute;
-  top: 74px;
-  left: 473px;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 1);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  overflow: hidden;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
 }
 .game-section-paragraph-2 {
-  width: 86px;
+  width: 100%;
   color: rgba(0, 209, 255, 1);
-  position: absolute;
-  top: 89px;
-  left: 557px;
   font-family: Helvetica Neue;
   font-weight: Regular;
   font-size: 19px;
-  opacity: 1;
   text-align: center;
 }
 .game-qr {
-  width: 106px;
-  height: 106px;
-  background: url("../images/game-qr.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 112px;
-  left: 547px;
-  overflow: hidden;
+  text-align: center;
 }
 .game-section-paragraph-3 {
-  width: 599px;
+  width: 100%;
   color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 237px;
-  left: 300px;
   font-family: Helvetica Neue;
   font-weight: Regular;
   font-size: 19px;
-  opacity: 1;
   text-align: center;
+  overflow-wrap: break-word;
 }
+
+/* ゲーム解説セクション */
 .game-comment-section {
-  width: 954px;
-  height: 444px;
-  opacity: 1;
-  position: absolute;
-  top: 910px;
-  left: 141px;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-top: 90px;
 }
 .game-comment-section-paragraph-1 {
-  width: 954px;
+  width: 100%;
   color: rgba(0, 209, 255, 1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
   font-family: Helvetica Neue;
   font-weight: Regular;
   font-size: 40px;
-  opacity: 1;
   text-align: center;
+  overflow-wrap: break-word;
+}
+.game-comment-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.game-comments {
+  width: 416px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .game-comment-section-paragraph-2 {
-  width: 416px;
+  width: 100%;
   color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 175px;
-  left: 0px;
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 18px;
-  opacity: 1;
+  font-size: 22px;
   text-align: left;
+  overflow-wrap: break-word;
 }
 .game-comment-section-paragraph-3 {
-  width: 416px;
+  width: 100%;
   color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 301px;
-  left: 0px;
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 18px;
-  opacity: 1;
+  font-size: 22px;
   text-align: left;
+  overflow-wrap: break-word;
+  margin-top: 30px;
+}
+.game-comment-images {
+  margin-top: 40px;
+  margin-left: 12px;
+  margin-right: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .content-game-img {
-  width: 198px;
-  height: 352px;
-  background: url("../images/content-game-img.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 92px;
-  left: 445px;
-  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .result-game-img {
-  width: 198px;
-  height: 352px;
-  background: url("../images/result-game-img.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 92px;
-  left: 686px;
-  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+/* 企画説明セクション */
 .plan-section {
-  width: 954px;
-  height: 362px;
-  opacity: 1;
-  position: absolute;
-  top: 1466px;
-  left: 141px;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-top: 90px;
 }
 .plan-section-paragraph-1 {
-  width: 954px;
+  width: 100%;
   color: rgba(0, 209, 255, 1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
   font-family: Helvetica Neue;
   font-weight: Regular;
   font-size: 40px;
-  opacity: 1;
   text-align: center;
 }
-.plan-section-paragraph-2 {
+.plan-section-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.plan-section-comments {
   width: 416px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.plan-section-paragraph-2 {
+  width: 100%;
   color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 121px;
-  left: 0px;
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 18px;
-  opacity: 1;
+  font-size: 22px;
   text-align: left;
+  overflow-wrap: break-word;
 }
 .plan-section-paragraph-3 {
-  width: 416px;
+  width: 100%;
   color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 247px;
-  left: 0px;
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 18px;
-  opacity: 1;
+  font-size: 22px;
   text-align: left;
+  overflow-wrap: break-word;
+  margin-top: 30px;
 }
 .game-plan-img {
-  width: 480px;
-  height: 270px;
-  background: url("../images/game-plan-img.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 92px;
-  left: 445px;
-  overflow: hidden;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+/* 関連項目セクション */
 .related-item-section {
-  width: 954px;
-  height: 426px;
-  opacity: 1;
-  position: absolute;
-  top: 1940px;
-  left: 141px;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-top: 90px;
 }
 .related-item-section-paragraph-1 {
-  width: 954px;
+  width: 100%;
   color: rgba(0, 209, 255, 1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
   font-family: Helvetica Neue;
   font-weight: Regular;
   font-size: 40px;
-  opacity: 1;
   text-align: center;
 }
 .related-item-section-paragraph-2 {
-  width: 954px;
+  width: 100%;
   color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 72px;
-  left: 0px;
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 24px;
+  font-size: 22px;
   opacity: 1;
-  text-align: left;
+  text-align: center;
+  overflow-wrap: break-word;
+  margin-top: 40px;
 }
+
+/* SNSセクション */
 .sns-section {
-  width: 172px;
-  height: 52px;
-  opacity: 1;
-  position: absolute;
-  top: 2317px;
-  left: 532px;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
 }
 .youtube-icon {
-  width: 52px;
-  height: 52px;
-  background: url("../images/youtube-icon.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .twitter-icon {
-  width: 52px;
-  height: 52px;
-  background: url("../images/twitter-icon.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 120px;
-  overflow: hidden;
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+/* フッターセクション */
 .footer {
-  width: 990px;
+  width: 100%;
   height: 64px;
-  opacity: 1;
-  position: absolute;
-  top: 2411px;
-  left: 123px;
-  overflow: hidden;
+  margin-top: 50px;
 }
 .footer-line {
-  width: 990px;
+  width: 100%;
   height: 2px;
-  background: rgba(238, 238, 238, 1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+  background: rgb(238, 238, 238);
 }
 .copyright {
-  width: 440px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 47px;
-  left: 265px;
+  width: 100%;
+  color: rgb(126, 126, 126);
   font-family: Helvetica Neue;
   font-weight: Regular;
   font-size: 14px;
-  opacity: 1;
   text-align: center;
+  margin-top: 10px;
 }
 a[target="_blank"] {
   padding-right: 22px;
   background: url(../images/icon_blank.png) right center/22px auto no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  /* タイトルセクション */
+  .title-section {
+    flex-direction: column;
+  }
+  .title-logos {
+    width: 460px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .title-section-paragraph-1 {
+    font-size: 28px;
+  }
+  .game-comment-flex {
+    flex-direction: column;
+  }
+  .content-game-img {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .result-game-img {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .plan-section-flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  /* タイトルセクション */
+  .title-section {
+    flex-direction: column;
+  }
+  .title-logos {
+    width: 460px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .title-section-paragraph-1 {
+    font-size: 28px;
+  }
+  .game-comment-flex {
+    flex-direction: column;
+  }
+  .content-game-img {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .result-game-img {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .plan-section-flex {
+    flex-direction: column;
+  }
 }
