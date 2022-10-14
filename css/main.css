@@ -24,30 +24,36 @@ html {
   justify-content: center;
   align-items: center;
 }
-.title-logos {
-  width: 460px;
-  margin-left: 30px;
-  margin-right: 30px;
+@media screen and (max-width: 768px){
+  .title-section {
+    flex-direction: column;
+  }
 }
-.title-section-paragraph-1 {
-  width: 100%;
-  color: rgba(0, 209, 255, 1);
-  font-family: Helvetica Neue;
-  font-weight: Regular;
-  font-size: 28px;
-  text-align: center;
-}
+
 .title-img {
-  width: 100%;
+  max-width: 460px;
   height: auto;
   margin-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+@media screen and (max-width: 768px){
+  .title-img{
+    width: 100%;
+  }
+}
+
 .title-game-img {
-  width: auto;
+  max-width: 220px;
   height: auto;
   margin-top: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 768px){
+  .title-game-img{
+    width: 100%;
+  }
 }
 
 /* ゲームセクション */
@@ -106,6 +112,7 @@ html {
   height: auto;
   margin-top: 90px;
 }
+
 .game-comment-section-paragraph-1 {
   width: 100%;
   color: rgba(0, 209, 255, 1);
@@ -115,39 +122,69 @@ html {
   text-align: center;
   overflow-wrap: break-word;
 }
+@media screen and (max-width: 520px){
+  .game-comment-section-paragraph-1{
+    font-size: 7vw;
+  }
+}
 .game-comment-flex {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 40px;
 }
+@media screen and (max-width: 768px) {
+  .game-comment-flex {
+    flex-direction: column;
+  }
+}
+
 .game-comments {
-  width: 416px;
+  max-width: 416px;
   margin-left: 30px;
   margin-right: 30px;
 }
+/* @media screen and (max-width: 768px) {
+  .game-comments {
+    width: 100%;
+  }
+} */
+
 .game-comment-section-paragraph-2 {
   width: 100%;
   color: rgba(0, 0, 0, 1);
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
   overflow-wrap: break-word;
 }
+@media screen and (max-width: 520px){
+  .game-comment-section-paragraph-2{
+    font-size: 4vw;
+  }
+}
+
 .game-comment-section-paragraph-3 {
   width: 100%;
   color: rgba(0, 0, 0, 1);
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
   overflow-wrap: break-word;
   margin-top: 30px;
 }
+@media screen and (max-width: 520px){
+  .game-comment-section-paragraph-3{
+    font-size: 4vw;
+  }
+}
+
 .game-comment-images {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 12px;
   margin-right: 12px;
   display: flex;
@@ -158,10 +195,27 @@ html {
 .content-game-img {
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 198px;
+  height: auto;
 }
+@media screen and (max-width: 768px){
+  .content-game-img{
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
 .result-game-img {
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 198px;
+  height: auto;
+}
+@media screen and (max-width: 768px){
+  .result-game-img{
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* 企画説明セクション */
@@ -170,6 +224,7 @@ html {
   height: auto;
   margin-top: 90px;
 }
+
 .plan-section-paragraph-1 {
   width: 100%;
   color: rgba(0, 209, 255, 1);
@@ -177,42 +232,92 @@ html {
   font-weight: Regular;
   font-size: 40px;
   text-align: center;
+  overflow-wrap: break-word;
+}
+@media screen and (max-width: 520px) {
+  .plan-section-paragraph-1 {
+    font-size: 7vw;
+  }
 }
 .plan-section-flex {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  padding-top: 40px;
 }
+@media screen and (max-width: 768px) {
+  .plan-section-flex {
+    flex-direction: column;
+  }
+}
+
 .plan-section-comments {
-  width: 416px;
-  margin-left: 20px;
-  margin-right: 20px;
+  max-width: 416px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
+/* @media screen and (max-width: 768px) {
+  .plan-section-comments {
+    width: 100%;
+  }
+} */
+
 .plan-section-paragraph-2 {
   width: 100%;
   color: rgba(0, 0, 0, 1);
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
   overflow-wrap: break-word;
 }
+@media screen and (max-width: 520px){
+  .plan-section-paragraph-2{
+    font-size: 4vw;
+  }
+}
+
 .plan-section-paragraph-3 {
   width: 100%;
   color: rgba(0, 0, 0, 1);
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
   overflow-wrap: break-word;
   margin-top: 30px;
 }
-.game-plan-img {
-  margin-top: 40px;
+@media screen and (max-width: 520px){
+  .plan-section-paragraph-3{
+    font-size: 4vw;
+  }
+}
+
+.game-plan-images{
   margin-left: 20px;
   margin-right: 20px;
+}
+.game-plan-img {
+  margin-top: 40px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 480px;
+  height: auto;
+}
+@media screen and (max-width: 768px){
+  .game-plan-img {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .game-plan-img {
+    width: 100%;
+  }
 }
 
 /* 関連項目セクション */
@@ -229,16 +334,29 @@ html {
   font-size: 40px;
   text-align: center;
 }
+@media screen and (max-width: 520px) {
+  .related-item-section-paragraph-1 {
+    font-size:7vw;
+  }
+}
+
 .related-item-section-paragraph-2 {
   width: 100%;
   color: rgba(0, 0, 0, 1);
   font-family: Helvetica Neue;
   font-weight: Regular;
-  font-size: 22px;
+  font-size: 18px;
   opacity: 1;
   text-align: center;
   overflow-wrap: break-word;
   margin-top: 40px;
+}
+@media screen and (max-width: 520px) {
+  .related-item-section-paragraph-2 {
+    font-size: 3.5vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* SNSセクション */
@@ -281,69 +399,22 @@ html {
   text-align: center;
   margin-top: 10px;
 }
-a[target="_blank"] {
-  padding-right: 22px;
-  background: url(../images/icon_blank.png) right center/22px auto no-repeat;
-}
-
-@media screen and (max-width: 768px) {
-  /* タイトルセクション */
-  .title-section {
-    flex-direction: column;
-  }
-  .title-logos {
-    width: 460px;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .title-section-paragraph-1 {
-    font-size: 28px;
-  }
-  .game-comment-flex {
-    flex-direction: column;
-  }
-  .content-game-img {
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .result-game-img {
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .plan-section-flex {
-    flex-direction: column;
-  }
-}
-
 @media screen and (max-width: 520px) {
-  /* タイトルセクション */
-  .title-section {
-    flex-direction: column;
+  .copyright {
+    font-size: 1vw;
   }
-  .title-logos {
-    width: 460px;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .title-section-paragraph-1 {
-    font-size: 28px;
-  }
-  .game-comment-flex {
-    flex-direction: column;
-  }
-  .content-game-img {
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .result-game-img {
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .plan-section-flex {
-    flex-direction: column;
-  }
+}
+
+a[target="_blank"] {
+  padding-right: 18px;
+  background: url(../images/icon_blank.png) right center/18px auto no-repeat;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 520px) {
+
 }
