@@ -93,6 +93,16 @@ html {
     width: 100%;
   }
 }
+.unity-canvas {
+  width: 360;
+  height: auto;
+}
+@media screen and (max-width: 360px) {
+  .unity-canvas {
+    width: 100%;
+  }
+}
+
 /* .game-qr-background {
   width: 253px;
   height: 148px;
