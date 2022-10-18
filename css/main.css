@@ -94,12 +94,17 @@ html {
   }
 }
 .unity-canvas {
-  width: 360;
-  height: auto;
+  width: 360px;
+  height: 640px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
 }
 @media screen and (max-width: 360px) {
   .unity-canvas {
     width: 100%;
+    height: auto;
   }
 }
 
