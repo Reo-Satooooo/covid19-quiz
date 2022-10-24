@@ -12,8 +12,13 @@ html {
 /* ヘッダーセクション */
 .header {
   width: 100%;
-  height: 62px;
+  height: 50px;
   background-color: rgba(255, 255, 255, 1);
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 20px;
+  }
 }
 
 /* タイトルセクション */
@@ -80,6 +85,8 @@ html {
     padding-right: 10px;
   }
 }
+
+/* Unity埋め込みテスト画像用 */
 .unity-game {
   width: 360px;
   height: auto;
@@ -94,10 +101,17 @@ html {
   }
 }
 
+/* Unity本番用 */
+.unity-game-padding {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 .unity-desktop {
   width: 360px;
   margin: auto;
-  height: 640px;
+  height: auto;
+  position: relative;
 }
 @media screen and (max-width: 360px) {
   .unity-desktop {
@@ -107,86 +121,81 @@ html {
 }
 
 #unity-canvas {
-  width: 360px;
-  height: 640px;
+  width: 324px;
+  height: 576px;
   background: #231f20;
 }
 @media screen and (max-width: 360px) {
   #unity-canvas {
-    width: 100%;
+    width: 90%;
     height: auto;
     background: #231f20;
   }
 }
-/* #unity-container.unity-mobile {
-  width: 100%;
-  height: 100%;
-}
-.unity-mobile #unity-canvas {
-  width: 100%;
-  height: 100%;
-} */
 #unity-loading-bar {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  background: blue;
+  position: absolute;
 }
 #unity-logo {
   width: 154px;
   height: 130px;
   background: url("../images/unity-logo-dark.png") no-repeat center;
-  background-color: red;
 }
 #unity-progress-bar-empty {
   width: 141px;
   height: 18px;
   margin-top: 10px;
   background: url("../images/progress-bar-empty-dark.png") no-repeat center;
-  background-color: red;
 }
 #unity-progress-bar-full {
   width: 0%;
   height: 18px;
   margin-top: 10px;
   background: url("../images/progress-bar-full-dark.png") no-repeat center;
-  background-color: red;
-}
-#unity-footer {
-  position: relative;
-}
-.unity-mobile #unity-footer {
-  display: none;
-}
-#unity-webgl-logo {
-  /* float: left; */
-  width: 204px;
-  height: 38px;
-  background: url("../images/webgl-logo.png") no-repeat center;
-  background-color: red;
-}
-#unity-build-title {
-  /* float: right; */
-  margin-right: 10px;
-  line-height: 38px;
-  font-family: arial;
-  font-size: 18px;
-}
-#unity-fullscreen-button {
-  /* float: right; */
-  width: 38px;
-  height: 38px;
-  background: url("./images/fullscreen-button.png") no-repeat center;
 }
 #unity-warning {
-  /* position: absolute; */
-  /* left: 50%;
-  top: 5%; */
+  position: absolute;
+  left: 50%;
+  top: 5%;
   transform: translate(-50%);
-  background: white;
   padding: 10px;
-  /* display: none; */
+  display: none;
+}
+
+.game-section-paragraph-2 {
+  width: 100%;
+  color: rgba(255, 255, 255, 1);
+  font-family: Helvetica Neue;
+  font-weight: Regular;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+}
+@media screen and (max-width: 520px) {
+  .game-section-paragraph-2 {
+    font-size: 3.5vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.game-section-paragraph-3 {
+  width: 100%;
+  color: rgba(255, 255, 255, 1);
+  font-family: Helvetica Neue;
+  font-weight: Regular;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+}
+@media screen and (max-width: 520px) {
+  .game-section-paragraph-3 {
+    font-size: 3.5vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /* ゲーム解説セクション */
@@ -229,11 +238,6 @@ html {
   margin-left: 30px;
   margin-right: 30px;
 }
-/* @media screen and (max-width: 768px) {
-  .game-comments {
-    width: 100%;
-  }
-} */
 
 .game-comment-section-paragraph-2 {
   width: 100%;
@@ -341,11 +345,6 @@ html {
   margin-left: 30px;
   margin-right: 30px;
 }
-/* @media screen and (max-width: 768px) {
-  .plan-section-comments {
-    width: 100%;
-  }
-} */
 
 .plan-section-paragraph-2 {
   width: 100%;
@@ -497,17 +496,3 @@ a[target="_blank"] {
 }
 @media screen and (max-width: 520px) {
 }
-
-/* UnityデフォルトCSS */
-/* body {
-  padding: 0;
-  margin: 0;
-} */
-/* #unity-container {
-  position: absolute;
-} */
-/* #unity-container.unity-desktop {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-} */
