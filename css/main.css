@@ -492,6 +492,15 @@ a[target="_blank"] {
   background: url(../images/icon_blank.png) right center/18px auto no-repeat;
 }
 
+a[target="_blank"] .youtube-icon {
+  padding-right: 18px;
+  background: none;
+}
+a[target="_blank"] .twitter-icon {
+  padding-right: 18px;
+  background: none;
+}
+
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 520px) {
